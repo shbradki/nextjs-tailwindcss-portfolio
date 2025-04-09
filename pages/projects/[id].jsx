@@ -21,33 +21,36 @@ function ProjectSingle(props) {
 							{props.project.ProjectHeader.publishDate}
 						</span>
 					</div>
-					<div className="flex items-center">
+					{/* <div className="flex items-center">
 						<FiTag className="w-4 h-4 text-ternary-dark dark:text-ternary-light" />
 						<span className="font-general-regular ml-2 leading-none text-primary-dark dark:text-primary-light">
 							{props.project.ProjectHeader.tags}
 						</span>
-					</div>
+					</div> */}
 				</div>
 			</div>
 
-			{/* Gallery */}
-			<div className="grid grid-cols-1 sm:grid-cols-3 sm:gap-10 mt-12">
-				{props.project.ProjectImages.map((project) => {
-					return (
-						<div className="mb-10 sm:mb-0" key={project.id}>
-							<Image
-								src={project.img}
-								className="rounded-xl cursor-pointer shadow-lg sm:shadow-none"
-								alt={project.title}
-								key={project.id}
-								layout="responsive"
-								width={100}
-								height={90}
-							/>
-						</div>
-					);
-				})}
+			{/* Gallery */}			
+			<div
+				className={`mt-12 ${
+					props.project.ProjectImages.length <= 2
+						? 'flex justify-center gap-6 flex-wrap'
+						: 'grid grid-cols-1 sm:grid-cols-3 sm:gap-10'
+				}`}
+			>
+				{props.project.ProjectImages.map((project) => (
+					<div className="mb-10 sm:mb-0 w-full max-w-sm" key={project.id}>
+						<Image
+							src={project.img}
+							alt={project.title}
+							width={600}
+							height={400}
+							className="rounded-xl shadow-lg object-cover w-full h-auto"
+						/>
+					</div>
+				))}
 			</div>
+
 
 			{/* Info */}
 			<div className="block sm:flex gap-0 sm:gap-10 mt-14">
@@ -67,17 +70,14 @@ function ProjectSingle(props) {
 										>
 											<span>{info.title}: </span>
 											<a
-												href="https://stoman.me"
-												className={
-													info.title === 'Website' ||
-													info.title === 'Phone'
-														? 'hover:underline hover:text-indigo-500 dark:hover:text-indigo-400 cursor-pointer duration-300'
-														: ''
-												}
-												aria-label="Project Website and Phone"
-											>
+												href={info.details}
+												target="_blank"
+												rel="noopener noreferrer"
+												className="underline text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-300 cursor-pointer transition-colors duration-200"
+												>
 												{info.details}
 											</a>
+
 										</li>
 									);
 								}
@@ -107,30 +107,7 @@ function ProjectSingle(props) {
 						</p>
 					</div>
 
-					{/* Single project social sharing */}
-					<div>
-						<p className="font-general-regular text-2xl font-semibold text-ternary-dark dark:text-ternary-light mb-2">
-							{props.project.ProjectInfo.SocialSharingHeading}
-						</p>
-						{/* <div className="flex items-center gap-3 mt-5">
-							{props.project.ProjectInfo.SocialSharing.map(
-								(social, index) => {
-									<Link
-										key={index}
-										href={social.url}
-										target="__blank"
-										passHref={true}
-										aria-label="Share Project"
-										className="bg-ternary-light dark:bg-ternary-dark text-gray-400 hover:text-primary-dark dark:hover:text-primary-light p-2 rounded-lg shadow-sm duration-500"
-									>
-										<span className="text-lg lg:text-2xl">
-											{social.icon}
-										</span>
-									</Link>;
-								}
-							)}
-						</div> */}
-					</div>
+					
 				</div>
 
 				{/*  Single project right section details */}
@@ -151,7 +128,7 @@ function ProjectSingle(props) {
 				</div>
 			</div>
 
-			<RelatedProjects />
+	
 		</div>
 	);
 }
