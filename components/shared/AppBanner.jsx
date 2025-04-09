@@ -24,7 +24,7 @@ function AppBanner() {
 					}}
 					className="font-general-semibold text-2xl lg:text-3xl xl:text-4xl text-center sm:text-left text-ternary-dark dark:text-primary-light uppercase"
 				>
-					Hi, I'm Spencer
+					Hi, I&apos;m Spencer
 				</motion.h1>
 				<motion.p
 					initial={{ opacity: 0 }}
@@ -74,6 +74,9 @@ function AppBanner() {
 							: '/images/developer-dark.svg'
 					}
 					alt="Developer"
+					width={700} 
+					height={500} 
+					className="w-full h-auto"
 				/>
 			</motion.div>
 		</motion.section>
