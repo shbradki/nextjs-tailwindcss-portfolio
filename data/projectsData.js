@@ -13,7 +13,7 @@ export const projectsData = [
 		title: 'EdgeFinder',
 		url: 'edgefinder',
 		category: 'ML',
-		img: '/images/NFL-ML-Sample-Results.png',
+		img: '/images/NFL-ML-FastAPI.png',
 		ProjectHeader: {
 			title: 'EdgeFinder',
 			publishDate: 'In Development',
@@ -65,17 +65,17 @@ export const projectsData = [
 				{
 					id: uuidv4(),
 					details:
-						"One of the most eye-opening lessons has been how to identify and eliminate data leakage. In sports analytics, this is particularly tricky. Many seemingly harmless features can actually carry information that would not be available prior to game day. I had to rigorously audit and redesign parts of my pipeline to ensure no future-dependent data or post-game statistics were influencing my predictions. As a result, I’ve developed a keen eye for spotting subtle sources of leakage and an appreciation for how small leaks can dramatically inflate performance metrics."
+						"One of the most eye-opening lessons has been how to identify and eliminate data leakage. In sports analytics, this is particularly tricky. Many seemingly harmless features can actually carry information that would not be available prior to game day. I had to rigorously audit and redesign parts of my pipeline to ensure no future-dependent data or post-game statistics were influencing my predictions. As a result, I've developed a keen eye for spotting subtle sources of leakage and an appreciation for how small leaks can dramatically inflate performance metrics."
 				},
 				{
 					id: uuidv4(),
 					details:
-						"In parallel, I built a custom comparator program that evaluates five powerful machine learning models side-by-side: Random Forest, Logistic Regression, XGBoost, Gradient Boosting, and AdaBoost. This tool tracks and compares each model’s performance across key metrics like accuracy, profitability, and a custom betting confidence score on a weekly and seasonal basis. It has been instrumental in helping me identify which models are most stable and generalizable over time, rather than just overfitting to recent trends."
+						"In parallel, I built a custom comparator program that evaluates five powerful machine learning models side-by-side: Random Forest, Logistic Regression, XGBoost, Gradient Boosting, and AdaBoost. This tool tracks and compares each model's performance across key metrics like accuracy, profitability, and a custom betting confidence score on a weekly and seasonal basis. It has been instrumental in helping me identify which models are most stable and generalizable over time, rather than just overfitting to recent trends."
 				},
 				{
 					id: uuidv4(),
 					details:
-						"Despite the progress, I’m still exploring the best long-term direction for the project. There’s a lot of potential for expanding it into real-time predictions, integrating with APIs for automation, or even turning it into a public-facing app. But for now, my primary focus is on refining the model to be consistently accurate, profitable, and robust. It's a work in progress, and one that continues to teach me with every iteration.",
+						"Despite the progress, I'm still exploring the best long-term direction for the project. There's a lot of potential for expanding it into real-time predictions, integrating with APIs for automation, or even turning it into a public-facing app. But for now, my primary focus is on refining the model to be consistently accurate, profitable, and robust. It's a work in progress, and one that continues to teach me with every iteration.",
 				},
 			],
 			SocialSharingHeading: 'Share This',
@@ -165,12 +165,12 @@ export const projectsData = [
 				{
 					id: uuidv4(),
 					details:
-						'',
+						"This project began out of genuine frustration. I was eagerly anticipating a New York Jets vs. Denver Broncos game that had been hyped as one of the most exciting matchups of the day, only to sit through a rain-soaked mess that ended with zero touchdowns and what felt like one of the most boring games ever televised. That experience made me realize just how much weather can affect not only the outcome of a game, but also the viewing experience. So, I built a weather bot. ",
 				},
 				{
 					id: uuidv4(),
 					details:
-						'',
+						"The bot automatically pulls weather forecasts for every upcoming NFL game each week, focusing on metrics like temperature, wind, and precipitation. I designed a Python-based pipeline that scrapes matchup schedules, maps them to game times and locations, and queries a weather API to get forecast data, which is then posted via a Twitter bot using AWS Lambda. I had to learn how to handle deployment in the cloud using cron expressions and Dockerized dependencies for the Python 3.12 ARM runtime, accounting for compatibility issues with packages like pandas and numpy. While it started as a fun way to avoid another disappointing Sunday, the project became a valuable lesson in automation, cloud architecture, and integrating multiple APIs in a clean, hands-off system.",
 				},
 				{
 					id: uuidv4(),
