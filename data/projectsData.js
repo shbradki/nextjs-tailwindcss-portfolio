@@ -279,22 +279,39 @@ export const projectsData = [
 				{
 					id: uuidv4(),
 					details:
-						"This project was part of the Headstarter program where we were tasked with created a full-stack, public facing project with a one week deadline. I live in NYC and as incredible of a walking city it is, it can sometimes be repetetive and hard to have an intenioned walk."
+						`Stepscape was built as part of the Headstarter program, where we were challenged to come up with 
+						and create a full-stack, public-facing project in just one week.`
 				},
 				{
 					id: uuidv4(),
 					details:
-						"And thus: Stepscape was born. You simply enter your starting point which can be an address, neighborhood, or any location, you select whether or not you want to have your final stop be near your starting point, and you enter what you would like to do on your walk.  The interests can be in any format you want and an LLM goes over the input and determines your stops in the order you entered."
+						`Living in NYC, I've always appreciated how walkable the city is. But even in a place like this, walks can 
+						start to feel repetitive and it's not always easy to plan a walk with purpose. That's what inspired Stepscape.`
 				},
 				{
 					id: uuidv4(),
 					details:
-						"Using an agentic workflow via UAgents and Fetch.ai, the system determines a location based on your interests, accumulates a list of the stops you will make, and returns a Google Maps URL to the user. It works on mobile and on the web."
+						`Stepscape lets you enter a starting location—an address, a neighborhood, or just a point of interest. 
+						Then you tell it whether you'd like to end up near where you started, and what you'd like to experience along the way. 
+						Your interests can be typed in freely, there's no fixed format. 
+						An LLM processes your input and the system figures out a route with stops tailored to your prompts, in the order you specify.`
 				},
 				{
 					id: uuidv4(),
 					details:
-						"This was a super great experience. It was both challenging, fun and rewarding. I had never built such a complex system involving a deployed backend and multiple microservices so I gained a ton of experience in all key aspects of software development, delivering a final product I'm incredibly proud of. Check it out and go for a walk!"
+						`Behind the scenes, the app uses an agentic workflow via 
+						UAgents and Fetch.ai to match locations to your interests, generate a full walking route, and return a Google Maps URL
+						with all of your stops. 
+						It works seamlessly on both mobile and web.`
+				},
+				{
+					id: uuidv4(),
+					details:
+						`This was a deeply rewarding experience. I'd never built something this complex before, 
+						involving a deployed backend and multiple microservices. 
+						I learned a ton about end-to-end software development and I'm incredibly proud of the final result. 
+						Check it out, go for a walk, and tell me what you think!
+`
 				},
 				
 			],
