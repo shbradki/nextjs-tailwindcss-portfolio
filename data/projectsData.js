@@ -78,7 +78,8 @@ export const projectsData = [
 						"Despite the progress, I'm still exploring the best long-term direction for the project. There's a lot of potential for expanding it into real-time predictions, integrating with APIs for automation, or even turning it into a public-facing app. But for now, my primary focus is on refining the model to be consistently accurate, profitable, and robust. It's a work in progress, and one that continues to teach me with every iteration.",
 				},
 			],
-			SocialSharingHeading: 'Share This',
+
+			// SocialSharingHeading: 'Share This',
 			// SocialSharing: [
 			// 	{
 			// 		id: uuidv4(),
@@ -183,7 +184,8 @@ export const projectsData = [
 						'',
 				},
 			],
-			SocialSharingHeading: 'Share This',
+
+			// SocialSharingHeading: 'Share This',
 			// SocialSharing: [
 			// 	{
 			// 		id: uuidv4(),
@@ -218,131 +220,118 @@ export const projectsData = [
 			// ],
 		},
 	},
-	// {
-	// 	id: 3,
-	// 	title: 'Project Management UI',
-	// 	url: 'project-management-ui',
-	// 	category: 'UI/UX Design',
-	// 	img: '/images/ui-project-1.jpg',
-	// 	ProjectHeader: {
-	// 		title: 'Project Management UI',
-	// 		publishDate: 'Jul 26, 2021',
-	// 		tags: 'UI / Frontend',
-	// 	},
-	// 	ProjectImages: [
-	// 		{
-	// 			id: uuidv4(),
-	// 			title: 'Kabul Project Management UI',
-	// 			img: '/images/ui-project-1.jpg',
-	// 		},
-	// 		{
-	// 			id: uuidv4(),
-	// 			title: 'Kabul Project Management UI',
-	// 			img: '/images/web-project-2.jpg',
-	// 		},
-	// 		{
-	// 			id: uuidv4(),
-	// 			title: 'Kabul Project Management UI',
-	// 			img: '/images/mobile-project-2.jpg',
-	// 		},
-	// 	],
-	// 	ProjectInfo: {
-	// 		ClientHeading: 'About Client',
-	// 		CompanyInfo: [
-	// 			{
-	// 				id: uuidv4(),
-	// 				title: 'Name',
-	// 				details: 'Company Ltd',
-	// 			},
-	// 			{
-	// 				id: uuidv4(),
-	// 				title: 'Services',
-	// 				details: 'UI Design & Frontend Development',
-	// 			},
-	// 			{
-	// 				id: uuidv4(),
-	// 				title: 'Website',
-	// 				details: 'https://company.com',
-	// 			},
-	// 			{
-	// 				id: uuidv4(),
-	// 				title: 'Phone',
-	// 				details: '555 8888 888',
-	// 			},
-	// 		],
-	// 		ObjectivesHeading: 'Objective',
-	// 		ObjectivesDetails:
-	// 			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam.',
-	// 		Technologies: [
-	// 			{
-	// 				title: 'Tools & Technologies',
-	// 				techs: [
-	// 					'HTML',
-	// 					'CSS',
-	// 					'JavaScript',
-	// 					'Vue.js',
-	// 					'TailwindCSS',
-	// 					'AdobeXD',
-	// 				],
-	// 			},
-	// 		],
-	// 		ProjectDetailsHeading: 'Challenge',
-	// 		ProjectDetails: [
-	// 			{
-	// 				id: uuidv4(),
-	// 				details:
-	// 					'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.',
-	// 			},
-	// 			{
-	// 				id: uuidv4(),
-	// 				details:
-	// 					'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?',
-	// 			},
-	// 			{
-	// 				id: uuidv4(),
-	// 				details:
-	// 					'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?',
-	// 			},
-	// 			{
-	// 				id: uuidv4(),
-	// 				details:
-	// 					'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.',
-	// 			},
-	// 		],
-	// 		SocialSharingHeading: 'Share This',
-	// 		// SocialSharing: [
-	// 		// 	{
-	// 		// 		id: uuidv4(),
-	// 		// 		name: 'Twitter',
-	// 		// 		icon: <FiTwitter />,
-	// 		// 		url: 'https://twitter.com/realstoman',
-	// 		// 	},
-	// 		// 	{
-	// 		// 		id: uuidv4(),
-	// 		// 		name: 'Instagram',
-	// 		// 		icon: <FiInstagram />,
-	// 		// 		url: 'https://instagram.com/realstoman',
-	// 		// 	},
-	// 		// 	{
-	// 		// 		id: uuidv4(),
-	// 		// 		name: 'Facebook',
-	// 		// 		icon: <FiFacebook />,
-	// 		// 		url: 'https://facebook.com/',
-	// 		// 	},
-	// 		// 	{
-	// 		// 		id: uuidv4(),
-	// 		// 		name: 'LinkedIn',
-	// 		// 		icon: <FiLinkedin />,
-	// 		// 		url: 'https://linkedin.com/',
-	// 		// 	},
-	// 		// 	{
-	// 		// 		id: uuidv4(),
-	// 		// 		name: 'Youtube',
-	// 		// 		icon: <FiYoutube />,
-	// 		// 		url: 'https://www.youtube.com/c/StomanStudio',
-	// 		// 	},
-	// 		// ],
-	// 	},
-	// },
-	
+	{
+		id: 3,
+		title: 'Stepscape',
+		url: 'stepscape',
+		category: 'Full stack',
+		img: '/images/Stepscape-Home.png',
+		ProjectHeader: {
+			title: 'Stepscape',
+			publishDate: 'Apr 2025',
+			
+		},
+		ProjectImages: [
+			{
+				id: uuidv4(),
+				title: 'Stepscape',
+				img: '/images/Stepscape-Home.png',
+			},
+			{
+				id: uuidv4(),
+				title: 'Stepscape',
+				img: '/images/Stepscape-Map-Example.png',
+			},
+			{
+				id: uuidv4(),
+				title: 'Stepscape',
+				img: '/images/Stepscape-Demo-Gif.gif',
+			},
+		],
+		ProjectInfo: {
+			CompanyInfo: [
+				{
+					id: uuidv4(),
+					title: 'Link',
+					details: 'https://stepscape.app',
+				},
+			],
+			ObjectivesHeading: 'Objective',
+			ObjectivesDetails:
+				'The goal of this project is to create custom team and player metrics as well as environmental data in order to identify betting market inefficiencies using machine learning.',
+			Technologies: [
+				{
+					title: 'Tools & Technologies',
+					techs: [
+						'Python',
+						'FastAPI',
+						'Fetch.ai',
+						'UAgents',
+						'Fly.io',
+						'Streamlit',
+						'OpenAI API',
+						'Google API'
+					],
+				},
+			],
+			ProjectDetailsHeading: 'Challenge',
+			ProjectDetails: [
+				{
+					id: uuidv4(),
+					details:
+						"This project was part of the Headstarter program where we were tasked with created a full-stack, public facing project with a one week deadline. I live in NYC and as incredible of a walking city it is, it can sometimes be repetetive and hard to have an intenioned walk."
+				},
+				{
+					id: uuidv4(),
+					details:
+						"And thus: Stepscape was born. You simply enter your starting point which can be an address, neighborhood, or any location, you select whether or not you want to have your final stop be near your starting point, and you enter what you would like to do on your walk.  The interests can be in any format you want and an LLM goes over the input and determines your stops in the order you entered."
+				},
+				{
+					id: uuidv4(),
+					details:
+						"Using an agentic workflow via UAgents and Fetch.ai, the system determines a location based on your interests, accumulates a list of the stops you will make, and returns a Google Maps URL to the user. It works on mobile and on the web."
+				},
+				{
+					id: uuidv4(),
+					details:
+						"This was a super great experience. It was both challenging, fun and rewarding. I had never built such a complex system involving a deployed backend and multiple microservices so I gained a ton of experience in all key aspects of software development, delivering a final product I'm incredibly proud of. Check it out and go for a walk!"
+				},
+				
+			],
+
+			// SocialSharingHeading: 'Share This',
+			// SocialSharing: [
+			// 	{
+			// 		id: uuidv4(),
+			// 		name: 'Twitter',
+			// 		icon: <FiTwitter />,
+			// 		url: 'https://twitter.com/realstoman',
+			// 	},
+			// 	{
+			// 		id: uuidv4(),
+			// 		name: 'Instagram',
+			// 		icon: <FiInstagram />,
+			// 		url: 'https://instagram.com/realstoman',
+			// 	},
+			// 	{
+			// 		id: uuidv4(),
+			// 		name: 'Facebook',
+			// 		icon: <FiFacebook />,
+			// 		url: 'https://facebook.com/',
+			// 	},
+			// 	{
+			// 		id: uuidv4(),
+			// 		name: 'LinkedIn',
+			// 		icon: <FiLinkedin />,
+			// 		url: 'https://linkedin.com/',
+			// 	},
+			// 	{
+			// 		id: uuidv4(),
+			// 		name: 'Youtube',
+			// 		icon: <FiYoutube />,
+			// 		url: 'https://www.youtube.com/c/StomanStudio',
+			// 	},
+			// ],
+		},
+	},
 ];
