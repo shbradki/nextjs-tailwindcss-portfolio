@@ -258,19 +258,18 @@ export const projectsData = [
 			],
 			ObjectivesHeading: 'Objective',
 			ObjectivesDetails:
-				'The goal of this project is to create custom team and player metrics as well as environmental data in order to identify betting market inefficiencies using machine learning.',
+				'The goal of this project is to allow users to get their 10,000 steps in with things they would be interested in doing, anywhere in the world to avoid repetitive or boring walks.',
 			Technologies: [
 				{
 					title: 'Tools & Technologies',
 					techs: [
 						'Python',
-						'FastAPI',
-						'Fetch.ai',
-						'UAgents',
-						'Fly.io',
-						'Streamlit',
-						'OpenAI API',
-						'Google API'
+						'FastAPI (API backend)',
+						'Railway (backend hosting)',
+						'Fly.io (frontend hosting)',
+						'Streamlit (Frontend UI)',
+						'OpenAI API (interest parsing)',
+						'Google API (geocoding and POIs)',
 					],
 				},
 			],
@@ -291,7 +290,7 @@ export const projectsData = [
 				{
 					id: uuidv4(),
 					details:
-						`Stepscape lets you enter a starting location—an address, a neighborhood, or just a point of interest. 
+						`Stepscape lets you enter a starting location: an address, a neighborhood, or just a point of interest. 
 						Then you tell it whether you'd like to end up near where you started, and what you'd like to experience along the way. 
 						Your interests can be typed in freely, there's no fixed format. 
 						An LLM processes your input and the system figures out a route with stops tailored to your prompts, in the order you specify.`
@@ -299,19 +298,183 @@ export const projectsData = [
 				{
 					id: uuidv4(),
 					details:
-						`Behind the scenes, the app uses an agentic workflow via 
-						UAgents and Fetch.ai to match locations to your interests, generate a full walking route, and return a Google Maps URL
-						with all of your stops. 
-						It works seamlessly on both mobile and web.`
+						`Behind the scenes, the app uses a FastAPI backend with a structured, multi-step workflow to interpret your interests, 
+						match them to real-world locations, and generate a walking route. 
+						It returns a Google Maps URL with personalized stops, all triggered via simple POST requests. 
+						The experience works seamlessly on both web and mobile.`
 				},
 				{
 					id: uuidv4(),
 					details:
 						`This was a deeply rewarding experience. I'd never built something this complex before, 
-						involving a deployed backend and multiple microservices. 
+						involving a deployed backend and microservices. 
 						I learned a ton about end-to-end software development and I'm incredibly proud of the final result. 
 						Check it out, go for a walk, and tell me what you think!
 `
+				},
+				
+			],
+
+			// SocialSharingHeading: 'Share This',
+			// SocialSharing: [
+			// 	{
+			// 		id: uuidv4(),
+			// 		name: 'Twitter',
+			// 		icon: <FiTwitter />,
+			// 		url: 'https://twitter.com/realstoman',
+			// 	},
+			// 	{
+			// 		id: uuidv4(),
+			// 		name: 'Instagram',
+			// 		icon: <FiInstagram />,
+			// 		url: 'https://instagram.com/realstoman',
+			// 	},
+			// 	{
+			// 		id: uuidv4(),
+			// 		name: 'Facebook',
+			// 		icon: <FiFacebook />,
+			// 		url: 'https://facebook.com/',
+			// 	},
+			// 	{
+			// 		id: uuidv4(),
+			// 		name: 'LinkedIn',
+			// 		icon: <FiLinkedin />,
+			// 		url: 'https://linkedin.com/',
+			// 	},
+			// 	{
+			// 		id: uuidv4(),
+			// 		name: 'Youtube',
+			// 		icon: <FiYoutube />,
+			// 		url: 'https://www.youtube.com/c/StomanStudio',
+			// 	},
+			// ],
+		},
+	},
+	{
+		id: 4,
+		title: 'AI Voice Assistant (Customer Service)',
+		url: 'ai-voice-assistant',
+		category: 'Full stack',
+		img: '/images/AI-Voice-Assistant-Home.png',
+		ProjectHeader: {
+			title: 'AI Voice Assistant',
+			publishDate: 'May 2025',
+			
+		},
+		ProjectImages: [
+			{
+				id: uuidv4(),
+				title: 'AI Voice Assistant',
+				img: '/images/AI-Voice-Assistant-Home.png',
+			},
+			{
+				id: uuidv4(),
+				title: 'AI Voice Assistant',
+				img: '/images/AI-Voice-Assistant-Demo-1.png',
+			},
+			{
+				id: uuidv4(),
+				title: 'AI Voice Assistant',
+				img: '/images/AI-Voice-Assistant-Demo-2.gif',
+			},
+		],
+		ProjectInfo: {
+			CompanyInfo: [
+				{
+					id: uuidv4(),
+					title: 'Link',
+					details: 'https://ai-customer-service-agent-six.vercel.app/',
+				},
+			],
+			ObjectivesHeading: 'Objective',
+			ObjectivesDetails:
+				'',
+			Technologies: [
+				{
+					title: 'Tools & Technologies',
+					techs: [
+						"React (frontend UI)",
+						"Vercel (frontend hosting)",
+						"Firebase Functions (backend logic)",
+						"Firestore (data storage and referencing)",
+						"OpenAI API (natural language response generation)",
+						"Deepgram (real-time audio transcription)",
+						"Open Source VAD (voice activity detection and capture)",
+						"Browser-native TTS (text-to-speech output)"
+					],
+				},
+			],
+			ProjectDetailsHeading: 'Challenge',
+			ProjectDetails: [
+				{
+					id: uuidv4(),
+					details:
+						`
+						The core challenge of building this AI voice assistant was bringing together several complex technologies, 
+						each with their own quirks, into a seamless, human-like conversation experience inside a browser.
+						`
+				},
+				{
+					id: uuidv4(),
+					details:
+						`
+						From the start, the idea was ambitious: allow users to "call" a virtual customer support agent, 
+						speak naturally, and receive intelligent, voiced replies in real time as if it were a human being 
+						they were speaking to. But achieving that required solving problems at every level of the stack.
+						`
+				},
+				{
+					id: uuidv4(),
+					details:
+						`
+						First came audio capture. I'd never worked with voice activity detection (VAD) before, so identifying when a 
+						user had finished speaking, without manual button presses, involved stitching together open-source 
+						VAD components and testing how browsers handle microphone streams across devices. On top of that,
+						it was a challenge to ensure the microphone didn't pick up the AI's responses, resulting in an endless 
+						loop of the agent speaking to itself.
+						`
+				},
+				{
+					id: uuidv4(),
+					details:
+						`
+						Then came speech-to-text (STT). I used Deepgram's API for its low-latency, streaming transcription. 
+						But raw transcripts aren't enough for an intelligent system. An LLM has to be able to process the entire 
+						conversation up to that point, generate a list of pending tasks, and execute them with accurate responses.
+						Designing that transcript pipeline to support follow-ups, multiple requests, 
+						and natural back-and-forth interactions was a key part of the system's intelligence.
+						`
+				},
+				{
+					id: uuidv4(),
+					details:
+						`
+						Generating responses via ChatGPT-3.5 Turbo was familiar territory, but delivering those responses 
+						as spoken audio was brand new. I used the browser's native text-to-speech (TTS) for speed and 
+						simplicity, but coordinating TTS playback with the rest of the conversation state 
+						required careful control, flow, and state management in React.
+						`
+				},
+				{
+					id: uuidv4(),
+					details:
+						`
+						I decided to do all of this without a traditional backend, so I leaned on Firebase Functions for 
+						on-demand logic, and Firestore for lightweight session memory, logging, and user-specific document 
+						storage. This laid the groundwork for real workflows like document emailing or referencing 
+						user files mid-conversation.
+						`
+				},
+				{
+					id: uuidv4(),
+					details:
+						`
+						Throughout the project, the biggest challenge wasn't just integrating APIs, 
+						it was designing a UX that felt conversational, responsive, and human despite the 
+						technical complexity happening behind the scenes. Stitching audio, transcripts, logic, 
+						and playback together into something fluid and helpful was the true engineering test 
+						and incredibly rewarding to pull off.
+						`	
 				},
 				
 			],
