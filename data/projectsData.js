@@ -375,7 +375,7 @@ export const projectsData = [
 			{
 				id: uuidv4(),
 				title: 'AI Voice Assistant',
-				img: '/images/AI-Voice-Assistant-Demo-2.gif',
+				img: '/images/AI-Voice-Assistant-Demo-2.png',
 			},
 		],
 		ProjectInfo: {
