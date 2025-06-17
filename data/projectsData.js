@@ -554,7 +554,11 @@ export const projectsData = [
 			],
 			ObjectivesHeading: 'Objective',
 			ObjectivesDetails:
-				'',
+				`The goal of this project was to train a machine learning model to act like a human property appraiser. 
+				Specifically, the goal is for it to select comparable properties ("comps") the way a real appraiser would. 
+				It was one of the most rewarding projects I've worked on, especially from a data wrangling standpoint, and 
+				came with a set of fun and complex challenges.
+				`,
 			Technologies: [
 				{
 					title: 'Tools & Technologies',
@@ -571,16 +575,6 @@ export const projectsData = [
 			
 			ProjectDetailsHeading: 'Challenge',
 			ProjectDetails: [
-				{
-					id: uuidv4(),
-					details:
-						`
-						The goal of this project was to train a machine learning model to act like a human property appraiser. Specifically, 
-						the goal is for it to select comparable properties ("comps") the way a real appraiser would. It was one of 
-						the most rewarding projects I've worked on, especially from a data wrangling standpoint, 
-						and came with a set of fun and complex challenges.
-						`
-				},
 				{
 					id: uuidv4(),
 					details:
