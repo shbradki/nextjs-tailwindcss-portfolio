@@ -404,6 +404,7 @@ export const projectsData = [
 					],
 				},
 			],
+
 			ProjectDetailsHeading: 'Challenge',
 			ProjectDetails: [
 				{
@@ -514,4 +515,341 @@ export const projectsData = [
 			// ],
 		},
 	},
+
+	{
+		id: 5,
+		title: 'Property Comparable Recommendation System',
+		url: 'property-comparable-recommendation-system',
+		category: 'Full stack',
+		img: '/images/Automax-top-of-page.png',
+		ProjectHeader: {
+			title: 'Property Comparable Recommendation System',
+			publishDate: 'May 2025',
+			
+		},
+		ProjectImages: [
+			{
+				id: uuidv4(),
+				title: 'Property Comparable Recommendation System',
+				img: '/images/Automax-top-of-page.png',
+			},
+			{
+				id: uuidv4(),
+				title: 'Property Comparable Recommendation System',
+				img:  '/images/Automax-feature-comparison.png',
+			},
+			{
+				id: uuidv4(),
+				title: 'Property Comparable Recommendation System',
+				img: '/images/Automax-price-suggestion-and-feedback-reset.png',
+			},
+		],
+		ProjectInfo: {
+			CompanyInfo: [
+				{
+					id: uuidv4(),
+					title: 'GitHub Link',
+					details: 'https://github.com/shbradki/appraisal_rec_ml',
+				},
+			],
+			ObjectivesHeading: 'Objective',
+			ObjectivesDetails:
+				'',
+			Technologies: [
+				{
+					title: 'Tools & Technologies',
+					techs: [
+						"Streamlit (frontend UI)",
+						"OpenAI API (data processing, explanation generation)",
+						"Regular expressions (data parsing)",
+						"XGBoost (Machine Learning model)",
+						"Pandas (feature engineering, data processing)",
+						"SHAP (property scoring, feature importances)"
+					],
+				},
+			],
+			
+			ProjectDetailsHeading: 'Challenge',
+			ProjectDetails: [
+				{
+					id: uuidv4(),
+					details:
+						`
+						The goal of this project was to train a machine learning model to act like a human property appraiser. Specifically, 
+						the goal is for it to select comparable properties ("comps") the way a real appraiser would. It was one of 
+						the most rewarding projects I've worked on, especially from a data wrangling standpoint, 
+						and came with a set of fun and complex challenges.
+						`
+				},
+				{
+					id: uuidv4(),
+					details:
+						`
+						The first challenge was cleaning the raw dataset. It was real appraisal data, which meant it was messy, 
+						inconsistent, and chaotic. There are a few different paths you can take to parse this kind of 
+						data such as LLMs or regexes. I went the regex route, which meant more manual work, but it gave me 
+						tight control over the process with faster parsing time at zero cost. I still used an LLM to help extract 
+						structure from the “public remarks” text fields, filling in missing values where possible to improve data quality.	
+						`
+				},
+				{
+					id: uuidv4(),
+					details:
+						`
+						Once the data was cleaned, I moved on to feature engineering. The core idea here was to calculate differences 
+						between the subject property and each candidate comp for features like gross living area, lot size, number of 
+						bedroomss and bathrooms, etc.. While the initial implementation was relatively straightforward, 
+						this component was also that involved the most creativity. Do you keep it simple? 
+						Do you include more abstract metrics? What adds signal vs. noise? I started with basic differences to 
+						keep the system modular, then gradually layered in more advanced features and used SHAP analysis to 
+						evaluate which ones mattered most.
+						`
+				},
+				{
+					id: uuidv4(),
+					details:
+						`
+						For the model, I used an XGBoost ranking model. It takes a subject property and a set of candidates and outputs a 
+						relevance score for each one. It was a natural fit for this type of pairwise ranking task. It's accurate, 
+						fast, and easy to iterate on.
+						`
+				},
+				{
+					id: uuidv4(),
+					details:
+						`
+						With the model selecting top comps, the next step was generating explanations. Real appraisers 
+						typically select 3 comps and justify their choices with written reasoning. To mirror this, 
+						I took the top 3 model-ranked comps, bundled their key feature diffs and SHAP values, and sent 
+						that context to a GPT-3.5 instance tasked with generating natural-language explanations. The goal was  
+						provide clear, human-readable justifications for each selection.
+						`
+				},
+				{
+					id: uuidv4(),
+					details:
+						`
+						At this point, I had a working ETL pipeline, a trained model, and an explanation generator. 
+						The final step was building a feedback loop. Appraisers can review the model's selections, approve or 
+						reject individual comps, and submit feedback. Approved comps are used to retrain the model, improving 
+						it over time. There's also a reset option to restore the system to its baseline state if needed.
+						`
+				},
+				{
+					id: uuidv4(),
+					details:
+						`
+						Surprisingly, the one of the hardest parts of the project wasn't the model or the data, it was designing a 
+						frontend that made all of this feel intuitive. I ended up building a clean, lightweight Streamlit 
+						interface that shows all the relevant data like subject and comp features, price range recommendations, 
+						and buttons for feedback and reset.The result is a tool that feels simple but really is an intelligent 
+						appraisal system under the hood.
+						`	
+				},
+				
+			],
+
+			// SocialSharingHeading: 'Share This',
+			// SocialSharing: [
+			// 	{
+			// 		id: uuidv4(),
+			// 		name: 'Twitter',
+			// 		icon: <FiTwitter />,
+			// 		url: 'https://twitter.com/realstoman',
+			// 	},
+			// 	{
+			// 		id: uuidv4(),
+			// 		name: 'Instagram',
+			// 		icon: <FiInstagram />,
+			// 		url: 'https://instagram.com/realstoman',
+			// 	},
+			// 	{
+			// 		id: uuidv4(),
+			// 		name: 'Facebook',
+			// 		icon: <FiFacebook />,
+			// 		url: 'https://facebook.com/',
+			// 	},
+			// 	{
+			// 		id: uuidv4(),
+			// 		name: 'LinkedIn',
+			// 		icon: <FiLinkedin />,
+			// 		url: 'https://linkedin.com/',
+			// 	},
+			// 	{
+			// 		id: uuidv4(),
+			// 		name: 'Youtube',
+			// 		icon: <FiYoutube />,
+			// 		url: 'https://www.youtube.com/c/StomanStudio',
+			// 	},
+			// ],
+		},
+	},
+
+	// {
+	// 	id: 6,
+	// 	title: 'Multimodal Video Analysis',
+	// 	url: 'multimodal-video-analysis ',
+	// 	category: 'Full stack',
+	// 	img: '/images/Automax-top-of-page.png',
+	// 	ProjectHeader: {
+	// 		title: 'Multimodal Video Analysis',
+	// 		publishDate: 'May 2025',
+			
+	// 	},
+	// 	ProjectImages: [
+	// 		{
+	// 			id: uuidv4(),
+	// 			title: 'Multimodal Video Analysis',
+	// 			img: '/images/Automax-top-of-page.png',
+	// 		},
+	// 		{
+	// 			id: uuidv4(),
+	// 			title: 'Multimodal Video Analysis',
+	// 			img:  '/images/Automax-feature-comparison.png',
+	// 		},
+	// 		{
+	// 			id: uuidv4(),
+	// 			title: 'Multimodal Video Analysis',
+	// 			img: '/images/Automax-price-suggestion-and-feedback-reset.png',
+	// 		},
+	// 	],
+	// 	ProjectInfo: {
+	// 		CompanyInfo: [
+	// 			{
+	// 				id: uuidv4(),
+	// 				title: 'GitHub Link',
+	// 				details: 'https://github.com/shbradki/multimodal-video-analysis',
+	// 			},
+	// 		],
+	// 		ObjectivesHeading: 'Objective',
+	// 		ObjectivesDetails:
+	// 			'',
+	// 		Technologies: [
+	// 			{
+	// 				title: 'Tools & Technologies',
+	// 				techs: [
+	// 					"Streamlit (frontend UI)",
+	// 					"OpenAI API (data processing, explanation generation)",
+	// 					"Regular expressions (data parsing)",
+	// 					"XGBoost (Machine Learning model)",
+	// 					"Pandas (feature engineering, data processing)",
+	// 					"SHAP (property scoring, feature importances)"
+	// 				],
+	// 			},
+	// 		],
+			
+	// 		ProjectDetailsHeading: 'Challenge',
+	// 		ProjectDetails: [
+	// 			{
+	// 				id: uuidv4(),
+	// 				details:
+	// 					`
+	// 					The goal of this project was to train a machine learning model to act like a human property appraiser. Specifically, 
+	// 					the goal is for it to select comparable properties ("comps") the way a real appraiser would. It was one of 
+	// 					the most rewarding projects I've worked on, especially from a data wrangling standpoint, 
+	// 					and came with a set of fun and complex challenges.
+	// 					`
+	// 			},
+	// 			{
+	// 				id: uuidv4(),
+	// 				details:
+	// 					`
+	// 					The first challenge was cleaning the raw dataset. It was real appraisal data, which meant it was messy, 
+	// 					inconsistent, and chaotic. There are a few different paths you can take to parse this kind of 
+	// 					data such as LLMs or regexes. I went the regex route, which meant more manual work, but it gave me 
+	// 					tight control over the process with faster parsing time at zero cost. I still used an LLM to help extract 
+	// 					structure from the “public remarks” text fields, filling in missing values where possible to improve data quality.	
+	// 					`
+	// 			},
+	// 			{
+	// 				id: uuidv4(),
+	// 				details:
+	// 					`
+	// 					Once the data was cleaned, I moved on to feature engineering. The core idea here was to calculate differences 
+	// 					between the subject property and each candidate comp for features like gross living area, lot size, number of 
+	// 					bedroomss and bathrooms, etc.. While the initial implementation was relatively straightforward, 
+	// 					this component was also that involved the most creativity. Do you keep it simple? 
+	// 					Do you include more abstract metrics? What adds signal vs. noise? I started with basic differences to 
+	// 					keep the system modular, then gradually layered in more advanced features and used SHAP analysis to 
+	// 					evaluate which ones mattered most.
+	// 					`
+	// 			},
+	// 			{
+	// 				id: uuidv4(),
+	// 				details:
+	// 					`
+	// 					For the model, I used an XGBoost ranking model. It takes a subject property and a set of candidates and outputs a 
+	// 					relevance score for each one. It was a natural fit for this type of pairwise ranking task. It's accurate, 
+	// 					fast, and easy to iterate on.
+	// 					`
+	// 			},
+	// 			{
+	// 				id: uuidv4(),
+	// 				details:
+	// 					`
+	// 					With the model selecting top comps, the next step was generating explanations. Real appraisers 
+	// 					typically select 3 comps and justify their choices with written reasoning. To mirror this, 
+	// 					I took the top 3 model-ranked comps, bundled their key feature diffs and SHAP values, and sent 
+	// 					that context to a GPT-3.5 instance tasked with generating natural-language explanations. The goal was  
+	// 					provide clear, human-readable justifications for each selection.
+	// 					`
+	// 			},
+	// 			{
+	// 				id: uuidv4(),
+	// 				details:
+	// 					`
+	// 					At this point, I had a working ETL pipeline, a trained model, and an explanation generator. 
+	// 					The final step was building a feedback loop. Appraisers can review the model's selections, approve or 
+	// 					reject individual comps, and submit feedback. Approved comps are used to retrain the model, improving 
+	// 					it over time. There's also a reset option to restore the system to its baseline state if needed.
+	// 					`
+	// 			},
+	// 			{
+	// 				id: uuidv4(),
+	// 				details:
+	// 					`
+	// 					Surprisingly, the hardest part wasn't the model or the data, it was designing a frontend that made all of 
+	// 					this feel intuitive. I ended up building a clean, lightweight Streamlit interface that shows all the 
+	// 					relevant data like subject and comp features, price range recommendations, and buttons for feedback and reset.
+	// 					The result is a tool that feels simple but really is an intelligent appraisal system under the hood.
+	// 					`	
+	// 			},
+				
+	// 		],
+
+	// 		// SocialSharingHeading: 'Share This',
+	// 		// SocialSharing: [
+	// 		// 	{
+	// 		// 		id: uuidv4(),
+	// 		// 		name: 'Twitter',
+	// 		// 		icon: <FiTwitter />,
+	// 		// 		url: 'https://twitter.com/realstoman',
+	// 		// 	},
+	// 		// 	{
+	// 		// 		id: uuidv4(),
+	// 		// 		name: 'Instagram',
+	// 		// 		icon: <FiInstagram />,
+	// 		// 		url: 'https://instagram.com/realstoman',
+	// 		// 	},
+	// 		// 	{
+	// 		// 		id: uuidv4(),
+	// 		// 		name: 'Facebook',
+	// 		// 		icon: <FiFacebook />,
+	// 		// 		url: 'https://facebook.com/',
+	// 		// 	},
+	// 		// 	{
+	// 		// 		id: uuidv4(),
+	// 		// 		name: 'LinkedIn',
+	// 		// 		icon: <FiLinkedin />,
+	// 		// 		url: 'https://linkedin.com/',
+	// 		// 	},
+	// 		// 	{
+	// 		// 		id: uuidv4(),
+	// 		// 		name: 'Youtube',
+	// 		// 		icon: <FiYoutube />,
+	// 		// 		url: 'https://www.youtube.com/c/StomanStudio',
+	// 		// 	},
+	// 		// ],
+	// 	},
+	// },
 ];
