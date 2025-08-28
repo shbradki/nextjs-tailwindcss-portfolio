@@ -265,11 +265,12 @@ export const projectsData = [
 					techs: [
 						'Python',
 						'FastAPI (API backend)',
-						'Railway (backend hosting)',
-						'Fly.io (frontend hosting)',
-						'Streamlit (Frontend UI)',
+						'Next.js (Frontend)',
 						'OpenAI API (interest parsing)',
 						'Google API (geocoding and POIs)',
+						'AWS EC2 (Backend hosting)',
+						'Vercel (Frontend hosting)',
+						'Supabase (User Auth, Data Storage)',
 					],
 				},
 			],
@@ -681,29 +682,29 @@ export const projectsData = [
 
 	// {
 	// 	id: 6,
-	// 	title: 'Multimodal Video Analysis',
-	// 	url: 'multimodal-video-analysis ',
+	// 	title: 'Multimodal Video Chat',
+	// 	url: 'multimodal-video-chat ',
 	// 	category: 'Full stack',
 	// 	img: '/images/Automax-top-of-page.png',
 	// 	ProjectHeader: {
-	// 		title: 'Multimodal Video Analysis',
+	// 		title: 'Multimodal Video Chat',
 	// 		publishDate: 'May 2025',
 			
 	// 	},
 	// 	ProjectImages: [
 	// 		{
 	// 			id: uuidv4(),
-	// 			title: 'Multimodal Video Analysis',
+	// 			title: 'Multimodal Video Chat',
 	// 			img: '/images/Automax-top-of-page.png',
 	// 		},
 	// 		{
 	// 			id: uuidv4(),
-	// 			title: 'Multimodal Video Analysis',
+	// 			title: 'Multimodal Video Chat',
 	// 			img:  '/images/Automax-feature-comparison.png',
 	// 		},
 	// 		{
 	// 			id: uuidv4(),
-	// 			title: 'Multimodal Video Analysis',
+	// 			title: 'Multimodal Video Chat',
 	// 			img: '/images/Automax-price-suggestion-and-feedback-reset.png',
 	// 		},
 	// 	],
