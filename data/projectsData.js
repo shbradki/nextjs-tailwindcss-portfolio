@@ -245,7 +245,7 @@ export const projectsData = [
 			{
 				id: uuidv4(),
 				title: 'Stepscape',
-				img: '/images/Stepscape-Demo-Gif.gif',
+				img: '/images/Stepscape-Mobile-App-Create.png',
 			},
 		],
 		ProjectInfo: {
