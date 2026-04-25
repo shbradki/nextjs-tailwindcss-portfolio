@@ -30,24 +30,17 @@ function ProjectSingle(props) {
 				</div>
 			</div>
 
-			{/* Gallery */}			
-			<div
-				className={`mt-12 ${
-					props.project.ProjectImages.length <= 2
-						? 'flex justify-center gap-6 flex-wrap'
-						: 'grid grid-cols-1 sm:grid-cols-3 sm:gap-10'
-				}`}
-			>
+			{/* Gallery */}
+			<div className="mt-12 flex flex-wrap justify-center items-center gap-4 sm:gap-5">
 				{props.project.ProjectImages.map((project) => (
-					<div className="mb-10 sm:mb-0 w-full max-w-sm" key={project.id}>
-						<Image
-							src={project.img}
-							alt={project.title}
-							width={600}
-							height={400}
-							className="rounded-xl shadow-lg object-cover w-full h-auto"
-						/>
-					</div>
+					<Image
+						key={project.id}
+						src={project.img}
+						alt={project.title}
+						width={600}
+						height={400}
+						className="rounded-xl shadow-lg object-contain h-auto w-auto max-h-56 max-w-[14rem] sm:max-h-72 sm:max-w-[18rem] transition-transform duration-300 ease-out hover:scale-105 hover:shadow-xl cursor-pointer"
+					/>
 				))}
 			</div>
 
@@ -65,15 +58,15 @@ function ProjectSingle(props) {
 								(info) => {
 									return (
 										<li
-											className="font-general-regular text-ternary-dark dark:text-ternary-light"
+											className="font-general-regular text-base text-ternary-dark dark:text-ternary-light"
 											key={info.id}
 										>
-											<span>{info.title}: </span>
+											<span className="font-general-regular text-base">{info.title}: </span>
 											<a
 												href={info.details}
 												target="_blank"
 												rel="noopener noreferrer"
-												className="underline text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-300 cursor-pointer transition-colors duration-200"
+												className="font-general-regular text-base underline break-all text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-300 cursor-pointer transition-colors duration-200"
 												>
 												{info.details}
 											</a>

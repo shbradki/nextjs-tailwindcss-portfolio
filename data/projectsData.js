@@ -252,8 +252,13 @@ export const projectsData = [
 			CompanyInfo: [
 				{
 					id: uuidv4(),
-					title: 'Link',
+					title: 'Website link',
 					details: 'https://stepscape.app',
+				},
+				{
+					id: uuidv4(),
+					title: 'iOS App Store',
+					details: 'https://apps.apple.com/us/app/stepscape-walk-discover/id6755166311',
 				},
 			],
 			ObjectivesHeading: 'Objective',
